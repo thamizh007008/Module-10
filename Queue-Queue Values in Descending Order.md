@@ -21,8 +21,31 @@ To write a Python program to:
 6. Sort the list in descending order.
 7. Print the updated list.
 
-## 🧪 Program: 
-
+## 🧪 Program
+ram: 
+```queue = []
+n = int(input("Enter the number of elements in the queue: "))
+for i in range(n):
+    value = int(input(f"Enter element {i + 1}: "))
+    queue.append(value)
+if len(queue) >= 2:
+    queue.pop(0)
+    queue.pop(0)
+elif len(queue) == 1:
+    queue.pop(0)
+    print("Only one element was in the queue, so it's now empty.")
+else:
+    print("The queue is empty. Nothing to remove.")
+if queue:
+    queue.sort(reverse=True)
+    print("Remaining elements in descending order:", queue)
+else:
+    print("No elements remaining in the queue.")
+```
 ### Output:
+![image](https://github.com/user-attachments/assets/0fc6711a-1f03-4815-8730-a7d00c817f2a)
 
 ## Result:
+Thus the program has been executed successfully.
+
+
