@@ -21,8 +21,28 @@ To write a Python program to:
 6. Display the updated list.
 
 ##  Program:
-Add Code Here
+```string_list = []
+n = int(input("Enter the number of strings: "))
+for i in range(n):
+    val = input(f"Enter string {i + 1}: ")
+    string_list.append(val)
+if len(string_list) >= 2:
+    string_list.pop()
+    string_list.pop()
+elif len(string_list) == 1:
+    string_list.pop()
+    print("Only one string was in the list, so it's now empty.")
+else:
+    print("The list is empty. Nothing to remove.")
+if string_list:
+    print("Updated list after removing last two elements:", string_list)
+else:
+    print("No elements remaining in the list.")
+```
 
 ### Output:
+![image](https://github.com/user-attachments/assets/ac11d541-8019-4009-a230-b063d2c79974)
 
 ## Result:
+Thus the program has been executed successfully.
+
